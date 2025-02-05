@@ -2,6 +2,10 @@
 
 This project is a Pokédex application built with Vue 3, TypeScript, and Vite. It allows users to search for Pokémon, view details about each Pokémon, and navigate through different Pokémon using a modern and responsive interface.
 
+## Services
+This project use PokeApi
+https://pokeapi.co/docs/graphql
+
 ## Technology Stack
 
 - **Vue 3**: A progressive JavaScript framework for building user interfaces.
