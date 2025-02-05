@@ -23,7 +23,7 @@
       </div>
 
       <div v-else-if="pokemonDetail" class="space-y-4">
-        <!-- Sección About: imagen y datos básicos -->
+
         <section class="flex flex-col items-center">
           <img 
             :src="pokemonDetail.sprite" 
@@ -33,21 +33,20 @@
           <h2 class="text-2xl font-bold mt-2 capitalize">{{ pokemonDetail.name }}</h2>
         </section>
 
-        <!-- Tabs -->
         <div>
-          <div class="flex border-b">
+          <nav class="flex border-b">
             <button 
               v-for="tab in TABS" 
               :key="tab" 
               @click="activeTab = tab"
               :class="[
-                'py-2 px-4 focus:outline-none',
+                'py-2 px-4 focus:outline-none cursor-pointer capitalize',
                 activeTab === tab ? 'border-b-2 border-red-600 font-bold' : 'text-gray-500'
               ]"
             >
               {{ tab }}
             </button>
-          </div>
+          </nav>
           <section class="p-4">
             <div v-if="activeTab === ABOUT_TAB">
               <p><strong>Altura:</strong> {{ pokemonDetail.height }}</p>
