@@ -1,5 +1,5 @@
 <template>
   <header class="bg-red-600 text-white py-4 px-6 flex items-center justify-center">
-    <h1 class="text-2xl font-bold">Pokédex</h1>
+    <img src="../assets/pokedex.png" alt="Pokédex" class=" h-10 mr-2" />
   </header>
 </template>
